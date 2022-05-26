@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: calc(100% - 38.8px); }
+body {
+  margin: 0;
+  font-family: Syne, "Helvetica Neue", sans-serif;
+  background-image: url(./assets/img/bg-color.png);
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
