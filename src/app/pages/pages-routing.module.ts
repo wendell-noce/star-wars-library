@@ -1,16 +1,17 @@
+import { ListagemComponent } from './listagem/listagem.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '',
+    redirectTo: 'listagem',
     pathMatch: 'full',
   },
-  // {
-  //     path: 'series',
-  //     component: SeriesComponent,
-  // },
+  {
+      path: 'listagem',
+      component: ListagemComponent,
+  },
   // {
   //     path: 'movies',
   //     component: MoviesComponent,

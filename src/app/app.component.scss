@@ -1,3 +1,8 @@
 .main{
-  height: calc(100% - 38.8px);
+  min-height: calc(100% - 38.8px);
+
+  img {
+    max-width: 100%;
+  }
 }
+

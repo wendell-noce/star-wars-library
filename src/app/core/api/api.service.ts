@@ -28,13 +28,4 @@ export class ApiService {
       );
   }
 
-  post(path: string, body: Object = {}): Observable<any> {
-    return this.http.post( `${environment.apiUrl}${path}`,
-        JSON.stringify(body)
-      ).pipe(
-        catchError((error) => {
-          return throwError(() => error);
-        }),
-      );
-  }
 }

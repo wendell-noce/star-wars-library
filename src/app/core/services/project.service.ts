@@ -5,16 +5,13 @@ import { ApiService } from '../api/api.service';
 @Injectable({
     providedIn: 'root',
 })
-export class TeacherService {
+export class ProjetcService {
     constructor(
         private apiService: ApiService,
     ) {}
 
-    getEvaluations(): Observable<any> {
-        return this.apiService.get(
-            'ge',
-            `body`
-        );
+    getPokemons(): Observable<any> {
+        return this.apiService.get( `pokemon/` );
     }
     // FIM APIS MÍDIA PROFESSOR
 }

@@ -2,12 +2,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { HttpClientModule, HTTP_INTERCEPTORS, } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { ApiService } from './api/api.service';
-import { AuthInterceptor } from './interceptors/auth.interceptor';
 
 @NgModule({
     declarations: [],
@@ -15,13 +14,8 @@ import { AuthInterceptor } from './interceptors/auth.interceptor';
       CommonModule,
       HttpClientModule,
       RouterModule,
-      MatSnackBarModule],
-    providers: [
-      ApiService,
-      {
-          provide: HTTP_INTERCEPTORS,
-          useClass: AuthInterceptor,
-          multi: true,
-      }, ],
+      MatSnackBarModule
+    ],
+    providers: [ ApiService],
 })
 export class CoreModule {}

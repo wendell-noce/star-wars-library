@@ -9,11 +9,13 @@ import {MatButtonModule} from '@angular/material/button';
 import { HeaderComponent } from './header/header.component';
 import { MatRippleModule } from '@angular/material/core';
 import { FooterComponent } from './footer/footer.component';
+import { CardPokemonComponent } from './components/card-pokemon/card-pokemon.component';
 
 @NgModule({
     declarations: [
       HeaderComponent,
-      FooterComponent
+      FooterComponent,
+      CardPokemonComponent
     ],
     imports: [
         CommonModule,
@@ -25,7 +27,8 @@ import { FooterComponent } from './footer/footer.component';
     ],
     exports: [
       HeaderComponent,
-      FooterComponent
+      FooterComponent,
+      CardPokemonComponent
     ],
 })
 export class SharedModule {}
